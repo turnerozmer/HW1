@@ -67,11 +67,11 @@
 .headers off
 
 -- Drop existing tables, so you'll start fresh each time this script is run.
-DROP TABLE movies; 
+DROP TABLE IF EXISTS movies; 
  
-DROP TABLE cast_crew; 
+DROP TABLE IF EXISTS cast_crew; 
 
-DROP TABLE awards; 
+DROP TABLE IF EXISTS awards; 
 
 -- Create new tables, according to your domain model
 CREATE TABLE movies(
