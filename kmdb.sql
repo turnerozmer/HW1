@@ -67,14 +67,51 @@
 .headers off
 
 -- Drop existing tables, so you'll start fresh each time this script is run.
--- TODO!
+DROP TABLE IF EXISTS movies
+DROP TABLE IF EXISTS cast_crew
+DROP TABLE IF EXISTS awards
 
 -- Create new tables, according to your domain model
--- TODO!
+CREATE TABLE movies(
+    id int,
+    title varchar(255),
+    year int,
+    rating varchar(255),
+    director varchar(255)
+)
+
+CREATE TABLE cast_crew(
+    id int,
+    movie_title varchar(255),
+    movie_role varchar(255),
+    name varchar(255)
+)
+
+CREATE TABLE awards(
+    id int,
+    movie_title varchar(255),
+    cast_crew_name varchar(255),
+    award varchar(255)
+)
 
 -- Insert data into your database that reflects the sample data shown above
 -- Use hard-coded foreign key IDs when necessary
--- TODO!
+INSERT INTO movies VALUES(1, "Batman Begins", "2005", "PG-13", "Christopher Nolan")
+INSERT INTO movies VALUES(2, "The Dark Knight", "2008", "PG-13", "Christopher Nolan")
+INSERT INTO movies VALUES(3, "The Dark Knight Rises", "2012", "PG-13", "Christopher Nolan")
+
+INSERT INTO cast_crew VALUES(1, "Batman Begins", "Composer", "Hans Zimmer")
+INSERT INTO cast_crew VALUES(2, "Batman Begins", "Bruce Wayne", "Christian Bale")
+INSERT INTO cast_crew VALUES(3, "Batman Begins", "Alfred", "Michael Caine")
+INSERT INTO cast_crew VALUES(4, "Batman Begins", "Story Writer", "David Goyer")
+INSERT INTO cast_crew VALUES(5, "The Dark Knight", "Composer", "Hans Zimmer")
+INSERT INTO cast_crew VALUES(6, "The Dark Knight", "Bruce Wayne", "Christian Bale")
+INSERT INTO cast_crew VALUES(7, "The Dark Knight", "Alfred", "Michael Caine")
+INSERT INTO cast_crew VALUES(8, "The Dark Knight", "Story Writer", "David Goyer")
+INSERT INTO cast_crew VALUES(9, "The Dark Knight Rises", "Composer", "Hans Zimmer")
+INSERT INTO cast_crew VALUES(10, "Batman Begins Rises", "Bruce Wayne", "Christian Bale")
+INSERT INTO cast_crew VALUES(11, "Batman Begins Rises", "Alfred", "Michael Caine")
+INSERT INTO cast_crew VALUES(12, "Batman Begins Rises", "Story Writer", "David Goyer")
 
 -- Prints a header for the movies output
 .print "Movies"
