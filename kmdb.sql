@@ -126,7 +126,7 @@ INSERT INTO awards VALUES(3, "The Dark Knight", "Richard King", "Sound Mixing")
 .print ""
 
 -- The SQL statement for the movies output
--- TODO!
+SELECT * FROM movies
 
 -- Prints a header for the cast output
 .print ""
@@ -136,4 +136,14 @@ INSERT INTO awards VALUES(3, "The Dark Knight", "Richard King", "Sound Mixing")
 
 
 -- The SQL statement for the cast output
--- TODO!
+SELECT * FROM cast_crew
+
+-- Prints a header for the awards
+.print ""
+.print "Awards"
+.print "========"
+.print ""
+
+
+-- The SQL statement for the awards
+SELECT * FROM awards
