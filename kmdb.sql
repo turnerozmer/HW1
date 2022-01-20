@@ -104,14 +104,21 @@ INSERT INTO cast_crew VALUES(1, "Batman Begins", "Composer", "Hans Zimmer")
 INSERT INTO cast_crew VALUES(2, "Batman Begins", "Bruce Wayne", "Christian Bale")
 INSERT INTO cast_crew VALUES(3, "Batman Begins", "Alfred", "Michael Caine")
 INSERT INTO cast_crew VALUES(4, "Batman Begins", "Story Writer", "David Goyer")
+INSERT INTO cast_crew VALUES(13, "Batman Begins", "Cinematographer", "Wally Pfister")
 INSERT INTO cast_crew VALUES(5, "The Dark Knight", "Composer", "Hans Zimmer")
 INSERT INTO cast_crew VALUES(6, "The Dark Knight", "Bruce Wayne", "Christian Bale")
+INSERT INTO cast_crew VALUES(14, "The Dark Knight", "The Joker", "Heath Ledger")
+INSERT INTO cast_crew VALUES(15, "The Dark Knight", "Sound Editor", "Richard King")
 INSERT INTO cast_crew VALUES(7, "The Dark Knight", "Alfred", "Michael Caine")
 INSERT INTO cast_crew VALUES(8, "The Dark Knight", "Story Writer", "David Goyer")
 INSERT INTO cast_crew VALUES(9, "The Dark Knight Rises", "Composer", "Hans Zimmer")
 INSERT INTO cast_crew VALUES(10, "Batman Begins Rises", "Bruce Wayne", "Christian Bale")
 INSERT INTO cast_crew VALUES(11, "Batman Begins Rises", "Alfred", "Michael Caine")
 INSERT INTO cast_crew VALUES(12, "Batman Begins Rises", "Story Writer", "David Goyer")
+
+INSERT INTO awards VALUES(1, "Batman Begins", "Wally Pfister", "Best Cinematography")
+INSERT INTO awards VALUES(2, "The Dark Knight", "Heath Ledger", "Best Supporting Actor")
+INSERT INTO awards VALUES(3, "The Dark Knight", "Richard King", "Sound Mixing")
 
 -- Prints a header for the movies output
 .print "Movies"
